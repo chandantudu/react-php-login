@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #222222;
+}
+
+input,
+button {
+  font-family: "Ubuntu", sans-serif;
+  outline: none;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.myform {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 0 50px 0;
+}
+
+.myform form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.myform form label {
+  font-weight: bold;
+}
+
+.myform form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #bbbbbb;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.myform form input:hover {
+  border-color: #999999;
+}
+
+.myform form input:focus {
+  border-color: #0d6efd;
+}
+
+[type="submit"] {
+  background: #0d6efd;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 3px;
+  padding: 12px 0;
+  cursor: pointer;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-top: 5px;
+  font-weight: bold;
+  width: 100%;
+}
+
+[type="submit"]:disabled {
+  background: #68a4fd;
+}
+
+[type="submit"]:disabled:hover {
+  box-shadow: none;
+}
+
+
+.success-msg,
+.err-msg {
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.success-msg {
+  color: #ffffff;
+  background-color: #20c997;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.bottom-link {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.home {
+  text-align: center;
+}
+
+.home .img {
+  font-size: 100px;
+}
+
+.home h1 span {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+button.logout {
+  background: #dc3545;
+  border: 1px solid rgba(0, 0, 0, .3);
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button.logout:hover,
+[type="submit"]:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
